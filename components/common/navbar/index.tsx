@@ -1,9 +1,20 @@
+import MaxWidthWrapper from "../MaxWidthWrapper";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between">
-      <div className="bg-orange-400">section 1</div>
-      <div className="bg-pink-600">Right Section</div>
-    </nav>
+    <MaxWidthWrapper>
+      <nav className="flex items-center justify-between py-8 backdrop-blur-lg">
+        <div className="bg-orange-400"></div>
+        <div className="flex items-center justify-center gap-x-4 text-2xl">
+          <FaLinkedin />
+          <FaGithub />
+          <FaInstagram />
+        </div>
+      </nav>
+    </MaxWidthWrapper>
   );
 };
 
